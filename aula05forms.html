@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-b">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula FORMS</title>
+</head>    
+<body>
+    <form action="" method="POST">
+        <label for="nome">Nome</label><br>
+        <input type="text" name="textNome" value="Eric" required><br>
+        <label for="sobrenome">Sobrenome</label><br>
+        <input type="text" name="textSobrenome" value="Lopes"><br><br>
+        <label for="">Radio</label>
+        <input type="radio" name="txtRadio">
+        <br>
+        <label for="">CheckBox</label>
+        <input type="checkbox" name="checkbox">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="" method="GET">
+        <p>
+        <h4> Escolha o seu time preferido: </h4> 
+        </p>
+        <input type="radio" name="time" value="Corinthians">
+        <label for="">Corinthians</label>
+        <input type="radio" name="time" value="Santos">
+        <label for="">Santos</label>
+        <input type="radio" name="time" value="Palmeiras">
+        <label for="">Palmeiras</label>
+    </form>
+    <br>
+    <form action="" method="GET">
+        <p>
+        <h4> Escolha qual o seu jogo preferido: </h4>
+        </p>
+        <input type="checkbox" name="jogo" value="Call Of Duty">
+        <label for="">>Call of Duty</label>
+        <input type="checkbox" name="jogo" value="GTA V">
+        <label for="">GTA V</label>
+        <input type="checkbox" name="jogo" value="League Of Legends">
+        <label for="">League Of Legends</label>
+        <input type="checkbox" name="jogo" value="CS-GO">
+        <label for="">CS-GO</label>
+        <input type="checkbox" name="jogo" value="Minecraft">
+        <label for="">Minecraft</label>
+    </form>
+    <br>
+    <form action="" method="GET">
+        <label for=""> Escolha o dia da semana: </label>
+        <select name="txtDia">
+            <option value="0"> Selecione um dia da semana </option>
+            <option value="Domingo"> Domingo </option>
+            <option value="Segunda"> Segunda </option>
+            <option value="Terça"> Terça </option>
+            <option value="Quarta"> Quarta </option>
+            <option value="Quinta"> Quinta </option>
+            <option value="Sexta"> Sexta </option>
+            <option value="Sábado"> Sábado </option>
+        </select>
+            <label for=""> Digite a sua Reclamação </label>
+            <br><br>
+            <textarea name="" cols="50" rows="20"></textarea>
+            <br>
+            <textarea name="" id="" style="width: 600px; height: 200px;"></textarea>
+
+            <button type="submit"> Enviar </button>
+            <button type="button" onclick="alert('ENVIANDO FORM')"> Enviar Depois</button>
+            <button type="reset"> Limpar </button>
+    </form>
+    <br><br>
+    <form action="">
+        <input list="times">
+        <datalist id="times">
+            <option value="Corinthians">
+            <option value="Santos">
+            <option value="Palmeiras">
+            <option value="Bahia">
+            <option value="Vitória"></option>            
+        </datalist>
+    </form>
+</body>
+</html>
